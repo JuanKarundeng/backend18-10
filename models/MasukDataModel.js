@@ -108,6 +108,9 @@ const MasukData = db.define(
     validasi: {
       type: DataTypes.STRING,
     },
+    harga_diharapkan: {
+      type: DataTypes.STRING,
+    },
   },
   {
     freezeTableName: true,
