@@ -81,19 +81,19 @@ export const createMasukData = async (req, res) => {
   let nilaiCC;
 
   if (jumlah_cc == 1000) {
-    nilaiCC = 20;
+    nilaiCC = 15;
   } else if (jumlah_cc == 1200) {
-    nilaiCC = 18;
+    nilaiCC = 13;
   } else if (jumlah_cc == 1300) {
-    nilaiCC = 16;
-  } else if (jumlah_cc == 1500) {
-    nilaiCC = 14;
-  } else if (jumlah_cc == 1800) {
     nilaiCC = 12;
-  } else if (jumlah_cc == 2000) {
+  } else if (jumlah_cc == 1500) {
     nilaiCC = 11;
-  } else if (jumlah_cc == 2500) {
+  } else if (jumlah_cc == 1800) {
     nilaiCC = 10;
+  } else if (jumlah_cc == 2000) {
+    nilaiCC = 9;
+  } else if (jumlah_cc == 2500) {
+    nilaiCC = 8;
   } else {
     nilaiCC = 1;
   }
