@@ -131,11 +131,12 @@ export const createMasukData = async (req, res) => {
   const formattedHargaAsli = hargaRP(hargaAsli);
 
   let status;
-  const statusHatiHati = hargaAsli * 0.2 + hargaAsli;
+  const statusAman = hargaAsli * 0.1 + hargaAsli;
+  const statusHatiHati = hargaAsli * 0.25 + hargaAsli;
 
-  if (pembayaran >= 0 && pembayaran <= hargaAsli) {
+  if (pembayaran >= 0 && pembayaran <= statusAman) {
     status = "Aman";
-  } else if (pembayaran > hargaAsli && pembayaran <= statusHatiHati) {
+  } else if (pembayaran > statusAman && pembayaran <= statusHatiHati) {
     status = "Hati-Hati";
   } else if (pembayaran > statusHatiHati) {
     status = "Bahaya";
