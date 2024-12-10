@@ -9,3 +9,4 @@ const db = new Sequelize("db_bensin", "root", "", {
 });
 
 export default db;
+// export default db;
